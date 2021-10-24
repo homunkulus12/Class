@@ -126,11 +126,11 @@ namespace wiadcode
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(385, 402);
+            this.button3.Location = new System.Drawing.Point(374, 402);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(93, 36);
+            this.button3.Size = new System.Drawing.Size(104, 36);
             this.button3.TabIndex = 8;
-            this.button3.Text = "Zapisz";
+            this.button3.Text = "Zamknij";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -148,6 +148,8 @@ namespace wiadcode
             this.Controls.Add(this.lblMess);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

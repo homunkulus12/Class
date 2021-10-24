@@ -90,6 +90,8 @@ namespace wiadcode
         {
             DataMeth dataMeth = new DataMeth();
             dataMeth.SafeData(lblMess.Text);
+
+            Application.Exit();
         }
     }
 }
