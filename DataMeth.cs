@@ -24,8 +24,14 @@ namespace wiadcode
             return FirstUser;
         }
 
-        public DataUser GiveNextUser()
+        public DataUser GiveNextUser(string mess)
         {
+            DataUser ThisUser = dataUsersList.Where(a => a.ID.Equals(thisID)).FirstOrDefault();
+            ThisUser.Message = mess;
+
+            string ToFile = JsonConvert.SerializeObject(dataUsersList);
+            File.WriteAllText(@"C:\Users\Max\source\repos\wiadcode\wiadcode\Data.json", ToFile);
+
             if (thisID == 17) {
                 var Nuller = dataUsersList.Where(a => a.ID.Equals(17)).FirstOrDefault();
                 return Nuller;
@@ -36,8 +42,14 @@ namespace wiadcode
             return NextUser;
         }
 
-        public DataUser GiveLastUser()
+        public DataUser GiveLastUser(string mess)
         {
+            DataUser ThisUser = dataUsersList.Where(a => a.ID.Equals(thisID)).FirstOrDefault();
+            ThisUser.Message = mess;
+
+            string ToFile = JsonConvert.SerializeObject(dataUsersList);
+            File.WriteAllText(@"C:\Users\Max\source\repos\wiadcode\wiadcode\Data.json", ToFile);
+
             if (thisID == 1)
             {
                 DataUser Nuller = dataUsersList.Where(a => a.ID.Equals(1)).FirstOrDefault();
@@ -49,10 +61,12 @@ namespace wiadcode
             return NextUser;
         }
 
-        public void SafeAllData() {
-            string path = @"C:\Users\Max\source\repos\wiadcode\wiadcode\Abil.json";
-            string ToCon = JsonConvert.SerializeObject(dataUsersList);
-            File.WriteAllText(path, ToCon);
+        public void SafeData(string mess) {
+            DataUser ThisUser = dataUsersList.Where(a => a.ID.Equals(thisID)).FirstOrDefault();
+            ThisUser.Message = mess;
+
+            string ToFile = JsonConvert.SerializeObject(dataUsersList);
+            File.WriteAllText(@"C:\Users\Max\source\repos\wiadcode\wiadcode\Data.json", ToFile);
         }
     }
 }

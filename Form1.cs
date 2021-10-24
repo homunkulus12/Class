@@ -67,7 +67,7 @@ namespace wiadcode
         private void button2_Click(object sender, EventArgs e)
         {
             DataMeth dataMeth = new DataMeth();
-            DataUser NextUser = dataMeth.GiveNextUser();
+            DataUser NextUser = dataMeth.GiveNextUser(lblMess.Text);
 
             lblID.Text = NextUser.ID.ToString();
             lblName.Text = NextUser.Name;
@@ -78,7 +78,7 @@ namespace wiadcode
         private void button1_Click(object sender, EventArgs e)
         {
             DataMeth dataMeth = new DataMeth();
-            DataUser LastUser = dataMeth.GiveLastUser();
+            DataUser LastUser = dataMeth.GiveLastUser(lblMess.Text);
 
             lblID.Text = LastUser.ID.ToString();
             lblName.Text = LastUser.Name;
@@ -88,7 +88,8 @@ namespace wiadcode
         // Save button.
         private void button3_Click(object sender, EventArgs e)
         {
-
+            DataMeth dataMeth = new DataMeth();
+            dataMeth.SafeData(lblMess.Text);
         }
     }
 }

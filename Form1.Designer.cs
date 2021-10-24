@@ -64,6 +64,7 @@ namespace wiadcode
             // 
             // lblMess
             // 
+            this.lblMess.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMess.Location = new System.Drawing.Point(12, 43);
             this.lblMess.Multiline = true;
             this.lblMess.Name = "lblMess";
