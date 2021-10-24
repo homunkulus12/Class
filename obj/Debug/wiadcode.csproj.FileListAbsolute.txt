@@ -1,0 +1,13 @@
+C:\Users\Max\source\repos\wiadcode\wiadcode\bin\Debug\wiadcode.exe.config
+C:\Users\Max\source\repos\wiadcode\wiadcode\bin\Debug\wiadcode.exe
+C:\Users\Max\source\repos\wiadcode\wiadcode\bin\Debug\wiadcode.pdb
+C:\Users\Max\source\repos\wiadcode\wiadcode\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Max\source\repos\wiadcode\wiadcode\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Max\source\repos\wiadcode\wiadcode\obj\Debug\wiadcode.csproj.AssemblyReference.cache
+C:\Users\Max\source\repos\wiadcode\wiadcode\obj\Debug\wiadcode.Properties.Resources.resources
+C:\Users\Max\source\repos\wiadcode\wiadcode\obj\Debug\wiadcode.csproj.GenerateResource.cache
+C:\Users\Max\source\repos\wiadcode\wiadcode\obj\Debug\wiadcode.csproj.CoreCompileInputs.cache
+C:\Users\Max\source\repos\wiadcode\wiadcode\obj\Debug\wiadcode.csproj.CopyComplete
+C:\Users\Max\source\repos\wiadcode\wiadcode\obj\Debug\wiadcode.exe
+C:\Users\Max\source\repos\wiadcode\wiadcode\obj\Debug\wiadcode.pdb
+C:\Users\Max\source\repos\wiadcode\wiadcode\obj\Debug\wiadcode.Form1.resources
